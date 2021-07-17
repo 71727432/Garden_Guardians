@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Musica_Fondo.ogg-a180ab0032345aa5345ea0084b4a7a39.oggstr"
+
+[deps]
+
+source_file="res://Fondo_Musicales/Musica/Musica_Fondo.ogg"
+dest_files=[ "res://.import/Musica_Fondo.ogg-a180ab0032345aa5345ea0084b4a7a39.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

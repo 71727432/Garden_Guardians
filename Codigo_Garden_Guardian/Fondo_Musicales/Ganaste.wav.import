@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ganaste.wav-56455d74f3de10b4eabdd2d49b158d10.sample"
+
+[deps]
+
+source_file="res://Fondo_Musicales/Ganaste.wav"
+dest_files=[ "res://.import/Ganaste.wav-56455d74f3de10b4eabdd2d49b158d10.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

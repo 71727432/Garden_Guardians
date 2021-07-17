@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Salto.wav-4b20c900b47de896f6eb8f79d28a7957.sample"
+
+[deps]
+
+source_file="res://Fondo_Musicales/Efecto_de_Sonido/Salto.wav"
+dest_files=[ "res://.import/Salto.wav-4b20c900b47de896f6eb8f79d28a7957.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

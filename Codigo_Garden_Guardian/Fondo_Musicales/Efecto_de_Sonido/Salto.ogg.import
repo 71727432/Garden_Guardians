@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Salto.ogg-f1359e30d9288059b4edfca43ba963a5.oggstr"
+
+[deps]
+
+source_file="res://Fondo_Musicales/Efecto_de_Sonido/Salto.ogg"
+dest_files=[ "res://.import/Salto.ogg-f1359e30d9288059b4edfca43ba963a5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

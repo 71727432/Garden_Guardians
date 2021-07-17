@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Perdiste.wav-ff8fc9e99e906e9dd3eb21b7ac3d9e7e.sample"
+
+[deps]
+
+source_file="res://Fondo_Musicales/Perdiste.wav"
+dest_files=[ "res://.import/Perdiste.wav-ff8fc9e99e906e9dd3eb21b7ac3d9e7e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
