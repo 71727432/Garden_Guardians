@@ -1,0 +1,132 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Perdiste.gd" type="Script" id=1]
+[ext_resource path="res://Pantallas_recursos/Fuentes/PressStart2P.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Pantallas_recursos/Fondo_Gamer_Over.jpg" type="Texture" id=3]
+[ext_resource path="res://Pantallas_recursos/Ganaste.png" type="Texture" id=4]
+[ext_resource path="res://Fondo_Musicales/Musica/Musica_Menu.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Fondo_Musicales/Click.wav" type="AudioStream" id=6]
+[ext_resource path="res://Fondo_Musicales/Ganaste.wav" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 17
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Mover"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 5.86084, -506.666 ), Vector2( 5.86084, 1.30261 ) ]
+}
+
+[node name="Node" type="Node"]
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2( 0.124023, 0.0411377 )
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="Node2D2"]
+margin_right = 1020.0
+margin_bottom = 500.0
+texture = ExtResource( 3 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect2" type="TextureRect" parent="Node2D2/TextureRect"]
+anchor_left = -0.00717385
+anchor_top = -0.113286
+anchor_right = -0.00717385
+anchor_bottom = 0.0447132
+margin_left = 133.919
+margin_top = 17.6739
+margin_right = 890.919
+margin_bottom = 234.674
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Node2D2/TextureRect"]
+anchor_left = -0.0180863
+anchor_top = -0.014211
+anchor_right = -0.0180863
+anchor_bottom = -0.014211
+margin_left = 8.54736
+margin_top = 255.881
+margin_right = 1016.55
+margin_bottom = 369.881
+custom_fonts/font = SubResource( 1 )
+text = "Felicidades haz salvado a muchas personas, los enemigos
+ya no atacaran las aldeas secanas y haz evitado una
+tragedia, es por todo ello que te FELICITAMOS y esperamos
+que el juegos haya sido de tu agrado"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ganaste_Menu" type="Button" parent="Node2D2/TextureRect"]
+anchor_left = 0.69
+anchor_top = 0.837
+anchor_right = 0.69
+anchor_bottom = 0.837
+margin_left = -136.704
+margin_top = -30.1317
+margin_right = 137.296
+margin_bottom = 29.8683
+rect_pivot_offset = Vector2( 274, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Ir al menú"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Ganaste_Reintentar" type="Button" parent="Node2D2/TextureRect"]
+anchor_left = 0.335
+anchor_top = 0.836
+anchor_right = 0.335
+anchor_bottom = 0.836
+margin_left = -136.711
+margin_top = -30.0668
+margin_right = 137.289
+margin_bottom = 29.9332
+rect_pivot_offset = Vector2( 274, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Volver a jugar"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Click" type="AudioStreamPlayer2D" parent="Node2D2/TextureRect" groups=[
+"Sonido_Click",
+]]
+stream = ExtResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D2"]
+anims/Mover = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Node2D2"]
+stream = ExtResource( 5 )
+autoplay = true
+
+[node name="Ganaste" type="AudioStreamPlayer" parent="Node2D2"]
+stream = ExtResource( 7 )
+autoplay = true
+
+[connection signal="pressed" from="Node2D2/TextureRect/Ganaste_Menu" to="Node2D2" method="_on_Ganaste_Menu_pressed"]
+[connection signal="pressed" from="Node2D2/TextureRect/Ganaste_Reintentar" to="Node2D2" method="_on_Ganaste_Reintentar_pressed"]
